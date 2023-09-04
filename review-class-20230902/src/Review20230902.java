@@ -81,8 +81,74 @@ public class Review20230902 {
         System.out.println(k2);
         String k3 = "Happy ";
         System.out.println(k3 + "Day");
-        
 
+
+        int i = 0;
+        i = i + 1;
+        System.out.println(i);
+        i++;
+        System.out.println(i);
+        ++i;
+        System.out.println(i);
+        i += 1;
+        System.out.println(i);
+        i += 3;
+        System.out.println(i);
+
+        int i1 = 3;
+        i1 = i1 - 2;
+        i1 -= 4;
+        System.out.println(i1);
+        i1--;
+        --i1;
+        System.out.println(i1);
+
+        int aa1 = 5;
+        int res1 = aa1++;
+        System.out.println("result = " + res1);
+        System.out.println(res1 + aa1);
+
+        int aa2 = 5;
+        int res2 = ++aa2;
+        System.out.println("result = " + res2);
+        System.out.println(res2 + aa2);
+
+        int aa3 = 3;
+        int res3 = aa3--;
+        System.out.println("result = " + res3);
+        System.out.println(res3 + aa3);
+
+        int aa4 = 3;
+        int res4 = --aa4;
+        System.out.println("result = " + res4);
+        System.out.println(res4 + aa4);
+
+        int aa5 = 7 % 5 - 2 * 8 / 4;
+        System.out.println(aa5);
+
+        int h2 = (10 - (1 + 2)) * 4;
+        System.out.println(h2);
+
+        // true && false ->false, &&的情況只要有false就係false，一定要both true先係true
+        // true || false -> true, ||的情況一定要both false先係false
+
+        int aa6 = 5 % 2;
+        System.out.println(aa6);
+
+        int t = 50;
+        if (t > 50) {
+            System.out.println("t is larger than 50");
+        }   else {System.out.println("t is not larger than 50");
+        }
+        
+        int s = 1; 
+        if (s < 5) {
+            System.out.println("aaa");
+        } else if (s < 7) {
+            System.out.println("bbb");
+        } else if (s < 12) {
+            System.out.println("ccc");
+        }
 
 
 
