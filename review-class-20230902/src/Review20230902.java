@@ -105,22 +105,22 @@ public class Review20230902 {
 
         int aa1 = 5;
         int res1 = aa1++;
-        System.out.println("result = " + res1);
+        System.out.println("result1 = " + res1);
         System.out.println(res1 + aa1);
 
         int aa2 = 5;
         int res2 = ++aa2;
-        System.out.println("result = " + res2);
+        System.out.println("result2 = " + res2);
         System.out.println(res2 + aa2);
 
         int aa3 = 3;
         int res3 = aa3--;
-        System.out.println("result = " + res3);
+        System.out.println("result3 = " + res3);
         System.out.println(res3 + aa3);
 
         int aa4 = 3;
         int res4 = --aa4;
-        System.out.println("result = " + res4);
+        System.out.println("result4 = " + res4);
         System.out.println(res4 + aa4);
 
         int aa5 = 7 % 5 - 2 * 8 / 4;
@@ -141,13 +141,15 @@ public class Review20230902 {
         }   else {System.out.println("t is not larger than 50");
         }
         
-        int s = 1; 
+        int s = 6; 
         if (s < 5) {
             System.out.println("aaa");
-        } else if (s < 7) {
+        } if (s < 7) {
             System.out.println("bbb");
-        } else if (s < 12) {
+        } if (s < 12) {
             System.out.println("ccc");
+        }
+        
         }
 
 
@@ -169,4 +171,3 @@ public class Review20230902 {
 
 
     }
-}
