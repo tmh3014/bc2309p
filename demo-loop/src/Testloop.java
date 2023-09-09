@@ -1,6 +1,6 @@
 public class Testloop {
     public static void main (String [] args) {
-        int x =2;
+        int x = 2;
         x *= 2;
         x *= 2;
         x *= 2;
