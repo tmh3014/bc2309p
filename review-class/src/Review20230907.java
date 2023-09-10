@@ -50,16 +50,25 @@ public class Review20230907 {
 
         String searchMe = "peter piper picked a peck of pickled peppers";
         int num = 0;
-
+        //num++;
         for (int i = 0; i < searchMe.length(); i++) {
-            if (searchMe.charAt(i) != 'p'){
+            if (searchMe.charAt(i) != 'p'){ //搵出p
                 continue;
             }
             num++; // 如果無呢句結果會等於 0
         }
        System.out.println("Found " + num + " p's in the string");
 
-
+        String searchMe2 = "So we’ve had an eventful morning at the G-20 talks in Delhi, with significant progress made thus far. Let’s CATCH UP up on what’s happened, as country leaders continue to meet:";
+        int num2 = 0;
+        //num2++;
+        for (int i2 = 0; i2 < searchMe2.length(); i2++) {
+            if (searchMe2.charAt(i2) != 'a') {
+                continue;
+            }
+            //num2++;
+        }
+        System.out.println("Found " + num2 + " a/s in the string");
 
 
 

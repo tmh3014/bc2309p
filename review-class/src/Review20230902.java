@@ -59,7 +59,7 @@ public class Review20230902 {
         int a5 = a3 + a4;
         System.out.println(a5);
 
-        byte b = -1;
+        byte b1 = -1;
         byte b2 = -5 ;
         byte b3 = 4;
         int b4 = b2 + b3;
