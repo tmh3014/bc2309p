@@ -22,7 +22,7 @@ public class JavaQuest4 {
     // 3. > 0
     int x = 0;   
     for (int i = 0; i < 100; i++) { // You cannot change this line
-      if (i > 19){
+      if (i >= 20){
         break;
       }
       if ( (x += 3) % 3 == 0 && x % 2 == 0){
