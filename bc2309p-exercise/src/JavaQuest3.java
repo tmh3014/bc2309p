@@ -31,40 +31,68 @@ public class JavaQuest3 {
     // Complete the switch statement
     switch (month) {
         case 1:
-        MonthOfName = "January";
-        break;
+        MonthOfName = "January"; {
+          System.out.println(number_Of_DaysInMonth = 31);
+        }
         case 2:
         MonthOfName = "February";
+        if(year % 4 == 0 && year % 400 == 0 && year % 100 != 0) {
+          System.out.println(number_Of_DaysInMonth = 29);
+        } else {
+            System.out.println(number_Of_DaysInMonth = 28);
+          }
+        
         break;
         case 3:
-        MonthOfName = "March";
+        MonthOfName = "March"; {
+          System.out.println(number_Of_DaysInMonth = 31);
+        }
         break;
         case 4:
-        MonthOfName = "April";
+        MonthOfName = "April"; {
+          System.out.println(number_Of_DaysInMonth = 30);
+        }
         break;
         case 5:
-        MonthOfName = "May";
+        MonthOfName = "May"; {
+          System.out.println(number_Of_DaysInMonth = 31);
+        }
         break;
         case 6:
-        MonthOfName = "June";
+        MonthOfName = "June"; {
+          System.out.println(number_Of_DaysInMonth = 30);
+        }
         break;
         case 7:
-        MonthOfName = "July";
+        MonthOfName = "July"; {
+          System.out.println(number_Of_DaysInMonth = 31);
+        }
         break;
         case 8:
-        MonthOfName = "August";
+        MonthOfName = "August"; {
+          System.out.println(number_Of_DaysInMonth = 31);
+        }
         break;
         case 9:
-        MonthOfName = "September";
+        MonthOfName = "September"; {
+          System.out.println(number_Of_DaysInMonth = 30);
+        }
         break;
         case 10:
-        MonthOfName = "October";
+        MonthOfName = "October"; {
+          System.out.println(number_Of_DaysInMonth = 31);
+        }
         break;
         case 11:
-        MonthOfName = "November";
+        MonthOfName = "November"; {
+          System.out.println(number_Of_DaysInMonth = 30);
+        }
         break;
         case 12:
-        MonthOfName = "December";
+        MonthOfName = "December"; {
+          System.out.println(number_Of_DaysInMonth = 31);
+        }
+        break;
         // Leap Year -> 29 days in February, otherwise 28.
         // Definition: If a year is divisible by 4 and not divisible by 100, 
         // but include the year divisible by 400.
@@ -75,5 +103,7 @@ public class JavaQuest3 {
     
     System.out.println(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
 
+    
   }
 }
+
