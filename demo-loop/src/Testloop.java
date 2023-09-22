@@ -31,5 +31,17 @@ public class Testloop {
             System.out.println(x); // print 7次
         }
         System.out.println(x); // 256
+
+        // for (byte b = 0; b < 128; b++) { // infinite loop
+           // System.out.println(b); // 0 .. 127
+            // when b = 127 -> b++ -> -128 -> -128 < 128 ???
+        
+
+        for (byte b = 0; b >= 0; b++) {
+            System.out.println(b);
+            // when b = 127 -> b++ -> -128 -> -128 >= 0 ?? false
+        }
     }
-}
+    }
+    
+

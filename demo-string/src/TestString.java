@@ -37,6 +37,16 @@ public class TestString {
         // assign short 32000 to s1;
         short s1 = 32000;
 
+        String str1 = "abc";
+        String str2 = "abc";
+        String str3 = "bbb";
+
+        boolean isEqual1 = str1.equals(str2);
+        boolean isEqual2 = str1.equals(str3);
+        System.out.println(isEqual1);
+
+        char ch1 = str1.charAt(1);
+        System.out.println(ch1);
         
 
 

@@ -1,61 +1,126 @@
+import java.util.Arrays;
+
 public class DemoArray {
-    public static void main (String [] args) throws Exception {
-        int i1 = 100;
-        int i2 = 105;
-        int i3 = 108;
+  public static void main(String[] args) throws Exception {
+    int i1 = 100;
+    int i2 = 105;
+    int i3 = 108;
 
-        //array
-        int[] array; //declaration
-        array = new int[3]; //initialization //搵連續3個格仔裝著3個數
+    // array
+    int[] array; // declaration
+    array = new int[3]; // initialization
 
-        int[] arr = new int[3]; // 0, 1, 2 -> index of the array
-        // assign values to array
-        // arr[-1] = 99; // array can't be negative
-        arr[0] = 100;
-        arr[1] = 105;
-        arr[2] = 108;
-        // arr[3] = 110; // run-time error
+    int[] arr = new int[3]; // 0, 1, 2 -> index of the array
+    // assign values to array
+    // arr[-1] = 99; //
+    arr[0] = 100;
+    arr[1] = 105;
+    arr[2] = 108;
+    // arr[3] = 110; // run-time error
 
-        arr[1] = 106; // just like int i = 106, 可以隨時更改
-        System.out.println(arr[0]); // 100
-        System.out.println(arr[1]); // 106
-        System.out.println(arr[2]); // 108
+    arr[1] = 106;
+    System.out.println(arr[0]); // 100
+    System.out.println(arr[1]); // 106
+    System.out.println(arr[2]); // 108
 
-        int o = arr[0]; // arr[0] -> int
-        System.out.println(o); // 100
-        // arr[1] = 3L; // can't assign long value to int variable
+    int o = arr[0]; // arr[0] -> int
+    System.out.println(o); // 100
+    // arr[1] = 3L; // error, cannot assign long value to int variable
 
-        //declaration array with size 6, and assign value
-        arr[0] = 11;
-        arr[1] = 21;
-        arr[2] = 31;
-        arr[3] = 41;
-        arr[4] = 51;
-        arr[5] = 61;
+    // declare int array with size 6, and assign values
+    // declare char array with size 4, and assign values
+    int[] arr2 = new int[6];
+    arr2[0] = -3;
+    arr2[1] = -10000;
+    arr2[2] = 90;
+    arr2[3] = 90;
+    arr2[4] = 90;
+    arr2[5] = 0;
 
-        int[] arr1 = new int[] {11, 21, 31, 41, 51, 61};
-        System.out.println(array.length);
+    char[] arr3 = new char[4];
+    arr3[0] = 'z';
+    arr3[1] = 'K';
+    arr3[2] = 'p';
+    arr3[3] = 'c';
 
+    // boolean array with size 5
+    boolean[] arr4 = new boolean[5];
+    arr4[0] = false;
+    arr4[1] = true;
+    arr4[2] = true;
+    arr4[3] = true;
+    arr4[4] = true;
 
+    int[] arr5 = new int[] {100, 99, 1005, 2000};
+    arr5[3] = 3000;
+    // arr5[4] = 30001;
 
-        for(arr[0] = 0; arr[0] < 100; arr[0]++) {
-            System.out.println(arr[0]);
-        }
-
-        //int[] arr2 = new int[]
-
-       // char[] arr3 = new char
-
-        int[] arr5 = new int[] {100, 99, 1005, 2000};
-        arr5[3] = 3000;
-        // arr5[4] = 30000; // run-time error 因為沒有第五個數字
-
-        arr5 = new int[] {1, 2, 3, 4, 5};
-
-        
-
-
-
+    arr5 = new int[] {1, 2, 3, 4, 5};
+    int box = -1;
+    for ( int i = 0; i < arr5.length; i++) {
+      if (i == 1) {
+        box = arr5[i];
+        arr5[i] = arr5[i + 2];
+        arr5[i + 2] = box;
+      }
     }
+    System.out.println(arr5);
+    System.out.println(Arrays.toString(arr5));
+
+    // arr5: Swap min and max values
+    int max = -1;
+    int min = 10000;
+    int maxIdx = -1;
+    int minIdx = -1;
+    int temp = -1;
+    for (int i = 0; i < arr5.length; i++) {
+      if (arr5[i] > max) {
+        max = arr5[i];
+        maxIdx = i;
+      }
+      if (arr5[i] < min) {
+        min = arr5[i];
+        minIdx = i;
+      }
+    }
+    temp = arr5[minIdx];
+    arr5[minIdx] = arr5[maxIdx];
+    arr5[maxIdx] = temp;
+    System.out.println(Arrays.toString(arr5));
+
+    // move max value to the tail of the array
+    max = -1;
+    for (int i = 0; i < arr5.length; i++) {
+      if (arr5[i] > max) {
+        max = arr5[i];
+        maxIdx = i;
+      }
+    }
+    for (int i = 0; i < arr5.length - 1; i++) {
+      if (i >= maxIdx) {
+          temp= arr5[i];
+          arr5[i] = arr5[i + 1];
+          arr5[i + 1] = temp;
+        }
+      }
+      //int temp2 = arr5[maxIdx];
+      //arr5[maxIdx] = arr5[arr5.length - 1];
+      //arr5[arr5.length - 1] = temp2;
     
+    System.out.println(Arrays.toString(arr5));
+  
+  // reverse the string
+  // hello -> olleh
+    String str = "hello";
+    char[] characters = str.toCharArray();
+    char temp2 = ' ';
+    for (int i = 0; i < str.length() / 2; i++) {
+      temp2 = characters[i];
+      characters[i] = characters[str.length() - 1 - i];
+      characters[str.length() - 1- i] = temp2; 
+    }
+    str = String.valueOf(characters);
+    System.out.println(str);
+
+}
 }
