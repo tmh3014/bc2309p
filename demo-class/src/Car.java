@@ -39,10 +39,9 @@ public class Car {
         System.out.println(car1.getcylinderCapacity());
         if (car1.cylinderCapacity == 0) {
             System.out.println("This is an electric car");
-        }
-            if (car1.cylinderCapacity != 0) {
-                System.out.println("This is a petrolium car");
-
-        }
+        } 
+            System.out.println("This is a petrolium car.");
+        
+            
     }
 }
