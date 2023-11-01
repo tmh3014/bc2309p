@@ -8,6 +8,8 @@ public class Car {
 
     int cylinderCapacity;
 
+    public char[] getMake;
+
     public void setNoOfSeats(int noOfSeats) {
         this.noOfSeats = noOfSeats;
     }
@@ -43,5 +45,14 @@ public class Car {
             System.out.println("This is a petrolium car.");
         
             
+    }
+    public void setYear(String string) {
+    }
+    public void setMake(String string) {
+    }
+    public void setModel(String string) {
+    }
+    public char[] getMake() {
+        return null;
     }
 }

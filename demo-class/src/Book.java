@@ -1,10 +1,11 @@
 public class Book { // Class is a template to describe the objects
     
-    int noOfPages; // state
+    // what is instance? means object
 
-    String author; // state
+    int noOfPages; // instance variable
 
-    // Behaviour
+    String author; // instance variable
+
     // instance method (An instance means an boject)
     public void setAuthor(String x) { // no static here!
         this.author = x; // this object

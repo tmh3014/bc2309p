@@ -10,6 +10,9 @@ public class Person {
 
     int hkid;
 
+    public Person() {
+    }
+
     public void setAge(int age) {
         this.age = age;
     }
@@ -42,4 +45,7 @@ public class Person {
         System.out.println("this is female elderly");
     }
 }
+
+    public void setName(String string) {
+    }
 }

@@ -34,19 +34,19 @@ public class Square {
     
     public static void main(String[] args) {
         System.out.println(area2(10));; // 100
-        System.out.println(Square.area2(7));
+        System.out.println(Square2.area2(7)); // 49
 
         int x = 10;
         int area = -1;
         if (x > 8) {
-            area = Square.area2(x);
+            area = Square2.area2(x);
         } else {
-            area = (int) Square.area3(x);
+            area = (int) Square2.area3(x);
         }
 
         // max()
         int[] integers = new int[] {100, 103, 5, 20};
-        System.out.println(Square.max(integers)); // 103
-        System.out.println(Square.max(new int[] {50, 23, 10, 80})); // 80
+        System.out.println(Square2.max(integers)); // 103
+        System.out.println(Square2.max(new int[] {50, 23, 10, 80})); // 80
     }
 }
