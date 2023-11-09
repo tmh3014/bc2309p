@@ -1,4 +1,4 @@
-public class Teacher extends Person { // child class
+public class Teacher extends Student { // child class
     
     // private String name;
 

@@ -44,6 +44,11 @@ public class Bus implements Movable {
         return this.isArrivedDestination();
     }
 
+   
     }
+
+
+
+    
     
 

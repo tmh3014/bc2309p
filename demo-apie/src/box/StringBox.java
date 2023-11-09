@@ -1,16 +1,17 @@
 package box;
 
-public class StringBox { // Encapsulation
+public class StringBox implements CharSequence { // Encapsulation
 
     private char[] arr;
 
     // constructor
     public static StringBox valueOf(String s) {
         return new StringBox(s);
-
     }
 
-
+    public StringBox(char[] arr) {
+        this.arr = arr;
+    }
 
     private StringBox (String s) {
         // or this.arr = s.toCharArray();
@@ -54,12 +55,27 @@ public class StringBox { // Encapsulation
         return new StringBox(str.toString());
     }
     
+    @Override
     public int length() {
         return this.arr.length;
     }
 
+    @Override
     public char charAt(int index) {
         return this.arr[index];
+    }
+
+    @Override
+    public CharSequence subSequence(int start, int end) { // 1, 4 -> a str of length 3
+        if (end == start)
+        return "";
+        if (end < start)
+        return new StringBox(this.arr);
+        char[] newArr = new char[end - start]; // 4 - 1
+        for (int i = start; i < end; i++) {
+            newArr[i] = this.arr[i];
+        }
+        return new StringBox(newArr);
     }
 
     public static void main(String[] args) {
@@ -77,6 +93,23 @@ public class StringBox { // Encapsulation
 
         // System.out.println(StringBox.valueOf("hello world").substring(2, 4)
         //   .append("!!!!!").toString());
+
+        System.out.println("hello".substring(1, 1).equals("")); // true
+        System.out.println("hello".substring(1, 2)); // e
+        // System.out.println("hello".substring(2, 1)); // error
+
+        // Polymorphism - Interface
+        CharSequence str = "hello world";
+        str = new StringBox("hello world");
+        // str.而家只有好少method可以用，因為係根據type - CharSequence
+        System.out.println(str.length()); // 11
+        System.out.println(str.toString()); // hello world
+        
+        String str2 = "abcd";
+        System.out.println(str2.length()); // 4
+        System.out.println(str2.toString()); // abcd
+        
+        str2.
     }
     
 }

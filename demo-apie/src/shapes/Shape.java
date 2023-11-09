@@ -14,13 +14,18 @@ public abstract class Shape {
         shapes = new Shape[10];
     }
 
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
     public static void add(Shape shape) {
         // add shape into shapes
         for (int i = 0; i < shapes.length; i++) {
-            if (shapes[i] == null)
+            if (shapes[i] == null) {
                 shapes[i] = shape;
                 return;
         }
+    }
     }
 
     public Shape(Color color) {
@@ -33,7 +38,7 @@ public abstract class Shape {
         return this.color;
     }
 
-    public static double totalArea(Shape[] shapes) {
+    public static double totalArea(Shape[] shapes) { // objects
         BigDecimal total = new BigDecimal(0.0);
         for (int i = 0; i < shapes.length; i++) {
         if (shapes[i] != null) {
@@ -45,14 +50,25 @@ public abstract class Shape {
         return total.doubleValue(); // 178.53
     }
 
+    public double calculate(BigDecimal ) {
+
+    }
+
     public static void main(String[] args) {
         // new 2 Circle and 1 Square, and put them into the Shape[]
-        Circle c1 = new Circle(3, Color.BLUE);
-        Circle c2 = new Circle(4, Color.BLACK);
+        Circle c1 = Circle.of(3.0, Color.BLUE);
+        Circle c2 = Circle.of(4, Color.BLACK);
         Square s1 = new Square(3, Color.BLACK);
         Shape.add(c1);
         Shape.add(c2);
         Shape.add(s1);
         System.out.println(Shape.totalArea(shapes)); // 
+
+        StringBuilder s = new StringBuilder("abc");
+        boolean bool = s.append("def").isEmpty();
+
+
+        Shape s2 = Circle.of(5.0, Color.WHITE);
+        Shape s3 = Square.valueOf(3, Color.BLUE);
     }
 }

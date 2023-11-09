@@ -1,4 +1,4 @@
-public class StudentA extends Person { // child class
+public class StudentA extends Student { // child class
     
     // private String name;
 
@@ -35,7 +35,7 @@ public class StudentA extends Person { // child class
         student.setAge(20);
         student.setName("John");
 
-        Person person = new Person();
+        Student person = new Student();
         person.setAge(40);
         person.setName("Mary");
 
@@ -44,11 +44,11 @@ public class StudentA extends Person { // child class
         System.out.println(student2.getName());
         System.out.println(student2.getStudentID());
         
-        System.out.println(Person.x); // hello (best way to call)
+        System.out.println(Student.x); // hello (best way to call)
         // System.out.println(Student.x); // hello
         // System.out.println(student2.x); // hello //但不應該用object取class資料
 
-        System.out.println(Person.getY()); // 10 (best way)
+        System.out.println(Student.getY()); // 10 (best way)
         // System.out.println(Student.getY()); // 10
         System.out.println(person.getY()); // 10
         System.out.println(student2.getY()); // 10

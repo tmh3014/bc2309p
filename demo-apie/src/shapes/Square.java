@@ -7,7 +7,8 @@ import enums.Color;
 
 public class Square extends Shape{
 
-    private int length;
+    private double length;
+
 
     public Square(int length, Color color) {
         super(color);
@@ -18,6 +19,10 @@ public class Square extends Shape{
     public double area(RoundingMode mode, int dp) {
         BigDecimal sLength = BigDecimal.valueOf(this.length);
     return sLength.multiply(sLength).setScale(dp, mode).doubleValue();
+    }
+
+    public static Square valueOf(int length, Color color) {
+        return new Square(length, color);
     }
     
 }
