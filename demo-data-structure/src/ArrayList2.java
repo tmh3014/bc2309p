@@ -53,5 +53,6 @@ public class ArrayList2 {
         }
         arrayList.add(100);
         System.out.println(arrayList.lastIndexOf(100)); // 4
+        
     }
 }

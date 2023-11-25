@@ -18,13 +18,12 @@ public class Order {
         return this.orderItems.add(orderItem);
     }
 
-    public double total() {
-        // double
+    public BigDecimal total() {
         BigDecimal total = BigDecimal.valueOf(0);
         for (OrderItem item : this.orderItems) {
             total = total.add(item.total());
         }
-        return total.doubleValue();
+        return total;
     }
     
 }

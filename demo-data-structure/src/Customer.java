@@ -1,5 +1,6 @@
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Customer {
 
@@ -22,7 +23,32 @@ public class Customer {
     }
 
     public double totalOrderAmount() {
-        BigDecimal totalOrderAmount = BigDecimal.valueOf();
+        BigDecimal totalOrderAmount = BigDecimal.valueOf(0);
+        for (Order order : this.orders) {
+            totalOrderAmount = totalOrderAmount.add(order.total());
+        } return totalOrderAmount.doubleValue();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) 
+        return true;
+        if (!(obj instanceof Customer))
+        return false;
+        Customer c = (Customer) obj;
+        if (this.name.equals(c.name))
+        return true;
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+    return Objects.hash(this.name);
+  }
+
+    @Override
+    public String toString() {
+        return "Customer(name=" + this.name + ")";
     }
 
     public static void main(String[] args) {

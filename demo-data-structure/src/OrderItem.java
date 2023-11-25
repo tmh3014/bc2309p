@@ -19,10 +19,9 @@ public class OrderItem{
         return this.unitPrice;
     }
 
-    public double total() {
+    public BigDecimal total() {
         return BigDecimal.valueOf(quantity) //
-        .multiply(BigDecimal.valueOf(unitPrice)) //
-        .doubleValue();
+        .multiply(BigDecimal.valueOf(unitPrice)); //
     }
 
     public static void main(String[] args) {

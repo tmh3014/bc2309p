@@ -1,0 +1,329 @@
+{
+    // 使用 IntelliSense 以得知可用的屬性。
+    // 暫留以檢視現有屬性的描述。
+    // 如需詳細資訊，請瀏覽: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "DemoPQ",
+            "request": "launch",
+            "mainClass": "DemoPQ",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "SortByPriceDsc",
+            "request": "launch",
+            "mainClass": "comparables.SortByPriceDsc",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "SortByPriceAsc",
+            "request": "launch",
+            "mainClass": "comparables.SortByPriceAsc",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "SortByPrice",
+            "request": "launch",
+            "mainClass": "comparables.SortByPrice",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Book",
+            "request": "launch",
+            "mainClass": "comparables.Book",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "ArrayList2",
+            "request": "launch",
+            "mainClass": "ArrayList2",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Bird",
+            "request": "launch",
+            "mainClass": "Bird",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Bird2",
+            "request": "launch",
+            "mainClass": "Bird2",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "CustomHashMap",
+            "request": "launch",
+            "mainClass": "CustomHashMap",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Customer",
+            "request": "launch",
+            "mainClass": "Customer",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Demo",
+            "request": "launch",
+            "mainClass": "Demo",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "DemoArrayDeque",
+            "request": "launch",
+            "mainClass": "DemoArrayDeque",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "DemoArrayLinkedList",
+            "request": "launch",
+            "mainClass": "DemoArrayLinkedList",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "DemoArrayList",
+            "request": "launch",
+            "mainClass": "DemoArrayList",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "DemoDeque",
+            "request": "launch",
+            "mainClass": "DemoDeque",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "DemoHashMap",
+            "request": "launch",
+            "mainClass": "DemoHashMap",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "DemoLinkedList",
+            "request": "launch",
+            "mainClass": "DemoLinkedList",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "DemoQueue",
+            "request": "launch",
+            "mainClass": "DemoQueue",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "DemoSet",
+            "request": "launch",
+            "mainClass": "DemoSet",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "DemoStack",
+            "request": "launch",
+            "mainClass": "DemoStack",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "NameList",
+            "request": "launch",
+            "mainClass": "NameList",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "OrderItem",
+            "request": "launch",
+            "mainClass": "OrderItem",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Person",
+            "request": "launch",
+            "mainClass": "Person",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Point",
+            "request": "launch",
+            "mainClass": "Point",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "School",
+            "request": "launch",
+            "mainClass": "School",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "SmallBird",
+            "request": "launch",
+            "mainClass": "SmallBird",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "StudentA",
+            "request": "launch",
+            "mainClass": "StudentA",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "SubClass",
+            "request": "launch",
+            "mainClass": "SubClass",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Teacher",
+            "request": "launch",
+            "mainClass": "Teacher",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "TestNumber",
+            "request": "launch",
+            "mainClass": "TestNumber",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Animal2",
+            "request": "launch",
+            "mainClass": "animal.Animal2",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Cat",
+            "request": "launch",
+            "mainClass": "animal.Cat",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Dog",
+            "request": "launch",
+            "mainClass": "animal.Dog",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Dog2",
+            "request": "launch",
+            "mainClass": "animal.Dog2",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "SmallDog",
+            "request": "launch",
+            "mainClass": "animal.SmallDog",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "StringBox",
+            "request": "launch",
+            "mainClass": "box.StringBox",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Box",
+            "request": "launch",
+            "mainClass": "enums.Box",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Direction",
+            "request": "launch",
+            "mainClass": "enums.Direction",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "OrderStatus",
+            "request": "launch",
+            "mainClass": "enums.OrderStatus",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Superman",
+            "request": "launch",
+            "mainClass": "human.Superman",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Circle",
+            "request": "launch",
+            "mainClass": "shapes.Circle",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Shape",
+            "request": "launch",
+            "mainClass": "shapes.Shape",
+            "projectName": "bc2309p_518c49c4"
+        },
+        {
+            "type": "java",
+            "name": "Location",
+            "request": "launch",
+            "mainClass": "transportation.Location",
+            "projectName": "bc2309p_518c49c4"
+        }
+    ]
+}
